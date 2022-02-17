@@ -15,13 +15,13 @@
         <h1 class="text-4xl font-bold text-center mt-4 text-amber-600">Cash Overview</h1>
     </header>
     <main>
-        <section class=" grid grid-cols-2 gap-4 mt-4 ">
-            <div><img class="mx-auto mt-4" src="images/money.jfif" alt=""></div>
+        <section class=" grid grid-cols-2 mt-4 ">
+            <div><img class="mx-auto mt-4" src="images/money3.jfif" alt=""></div>
             <div>
-                <div class="bg-gray-100 w-3/4 text-center p-4">
+                <div class="bg-gray-100 w-3/4 text-center p-6 mt-4">
                     <h1 class="text-3xl font-semibold">Income</h1>
                     <br>
-                    <h5 id="income" class="font-bold">Income: <input class="bg-gray-300" type="text">
+                    <h5 class="font-bold">Income: <input class="bg-gray-300" id="income" type="text">
                     </h5>
                     <h1 class="text-3xl font-semibold mt-4">Expences</h1>
                     <h5 class="font-bold mt-4">Food: <input id="food-cost" class=" bg-gray-300" type="text">
@@ -31,22 +31,24 @@
                     <h5 class="font-bold mt-2">Clothes: <input id="clothes-cost" class=" bg-gray-300" type="text">
                     </h5>
                     <br>
-                    <button class="bg-violet-500 text-white font-bold px-4 py-2  rounded">Calculate</button>
+                    <button id="calculate"
+                        class="bg-violet-500 text-white font-bold px-4 py-2  rounded">Calculate</button>
                     <br>
                     <!--------Balance-------->
-                    <h1 class="text-2xl mt-4 font-semibold">Total expences: <span>00</span></h1>
-                    <h1 class="text-2xl font-semibold">Balance: <span>00</span></h1>
+                    <h1 class="text-2xl mt-4 font-semibold">Total expences: <span id="expences">00</span></h1>
+                    <h1 class="text-2xl font-semibold">Balance: <span id="balance-remain">00</span></h1>
                     <br>
                     <!--------bonus part-------->
 
                     <div>
                         <span class="mt-4 font-bold">Save: </span>
-                        <input class="save-input" type="text">
+                        <input id="save-field" class="save-input" type="text">
                         <span>%</span>
-                        <button class="bg-violet-500 text-white font-bold px-9 py-2  rounded">Save</button>
+                        <button id="save-button"
+                            class="bg-violet-500 text-white font-bold px-9 py-2  rounded">Save</button>
                         <!--------Savings and remaining Bakance-------->
-                        <h1 class="text-2xl mt-4 font-semibold">Saving Amount: <span>00</span></h1>
-                        <h1 class="text-2xl  font-semibold">Remaining Balance: <span>00</span></h1>
+                        <h1 class="text-2xl mt-4 font-semibold">Saving Amount: <span id="saving">00</span></h1>
+                        <h1 class="text-2xl  font-semibold">Remaining Balance: <span id="total-remain">00</span></h1>
                     </div>
                 </div>
             </div>
