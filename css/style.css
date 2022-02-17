@@ -1,0 +1,8 @@
+.save-input{
+    width: 60px;
+    padding : 5px 20px;
+    background-color: #d1d5db;
+}
+input{
+    outline: none;
+}
