@@ -6,3 +6,12 @@
 input{
     outline: none;
 }
+
+
+@media screen and (max-width: 644px) {
+    #money-section{
+        overflow: hidden;
+        padding : 0px 20px;
+        margin: auto;
+    }
+  }
